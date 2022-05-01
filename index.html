@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <!--Favicon link will add an icon visible on the tab area of the website -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/favicon_io/favicon.ico"
+    />
+    <!--Animation stylesheet imported from cdnjs-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>NAO | Web Developer</title>
+</head>
+
+<body>
+    <!--Header contains the navigation bar which will link to the different sections of the page as well as a download button of my CV-->
+    <header class="header" id="header">
+        <nav>
+            <h1>Nathan A.O</h1>
+            <ul>
+              <li><a href="#about-me" class="nav-link">About Me</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+              <li><a href="#" class="nav-link">CV</a></li>
+            </ul>
+            <!--The button will appear only in mobile devices to substitute the nav bar.-->
+            <button class="menu-button" id="menu-button">
+              <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+          </nav>
+        </header>
+    
+        <!--The core introduction section will show a quick paragraph summarizing what the page will show as well as my avatar-->
+        <section class="core-intro">
+          <!--The animate class will include the specific animation commands we want to impose on each element-->
+          <img
+            class="animate__animated animate__rubberBand"
+            src="./assets/images/penguin_logo_.jpg"
+            alt="image of an emperor penguin as my avatar, currently as a placeholder for my personal picture"
+          />
+          <div
+            class="core animate__animated animate__shakeX animate__bounceInRight"
+          >
+            <h2 class="core-title">About</h2>
+            <p class="core-text">
+              Welcome to my page! Here you'll find a gallery of my work, contact
+              information and more about me.
+            </p>
+          </div>
+        </section>
+    
+        <!--About me section will include paragraphs detailing a brief summary of who i am.-->
+        <section class="about-me" id="about-me">
+          <h2>About Me</h2>
+          <p>
+            I'm an aspiring Fullstack developer from Mexico, while my formal
+            education is in financial management i have a passion for programming
+            and computers, here you'll see some of my recent work
+          </p>
+        </section>
+    
+        <!--Section will include cards with each displaying a snippet, description and links to each project i've worked on-->
+        <section class="projects" id="projects">
+          <h2 class="projects-title">Projects</h2>
+          <div class="project-container">
+            <div
+              class="project-container project-card animate__animated animate__shakeX"
+            >
+              <img
+                src="./assets/images/Code Screenshots/Code_refactoring_Assignment_1.jpg"
+                alt="Screenshot of my first project, a code refactoring of the Horiseon website. Picture shows a snippet of the landing of the afformentioned site."
+                loading="lazy"
+                class="project-screenshot"
+              />
+              <h3 class="projects-title">Horiseon refactoring</h3>
+              <p class="project-details">
+                Code refactoring of the Horiseon website.
+              </p>
+              <a
+                href="https://github.com/NA-Ag/01-assignment-marketing-website"
+                target="_blank"
+                class="project-link"
+                >Check Out the Repo</a
+              >
+              <br />
+              <br />
+              <a
+                href="https://na-ag.github.io/01-assignment-marketing-website/"
+                target="_blank"
+                class="project-link"
+                >Check Out the Site</a
+              >
+            </div>
+          </div>
+        </section>
+    
+        <!--Contact section-->
+        <section class="contact" id="contact">
+          <h2>Get In Touch With Me</h2>
+          <div class="contact-form-container">
+            <div class="contact-form">
+              <!--Form will link directly to an API service which will then redirect the message to my email, pending a replacement-->
+              <form action="https://formspree.io/f/xnqwpaql" method="POST">
+                <div class="form-control">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="sender-name"
+                    placeholder="Enter Your Name"
+                    class="input-field"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="sender-email"
+                    placeholder="Enter Your Email"
+                    class="input-field"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    cols="60"
+                    rows="10"
+                    placeholder="Enter Your Message"
+                    name="message"
+                    class="input-field"
+                    required
+                  ></textarea>
+                </div>
+                <input
+                  type="submit"
+                  value="Submit"
+                  id="submit-btn"
+                  class="submit-btn"
+                />
+              </form>
+            </div>
+          </div>
+        </section>
+    
+        <!--Scroll up button-->
+        <div class="scroll-up" id="scroll-up">
+          <a href="#header" class="nav-link">
+            <img
+              src="assets/images/up_arrow-modified.png"
+              class="button-icon up-arrow"
+              alt="An arrow that points up"
+            />
+          </a>
+        </div>
+    
+        <footer>
+          <p class="copy">
+            Built by
+            <a href="https://github.com/NA-Ag" target="_blank">Nathan Aguilar</a>
+          </p>
+        </footer>
+    
+        <!--Scripts required for the menu button to appear in mobile devices -->
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+          nomodule
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+          ></script>
+          <script src="./assets/JS/index.js"></script>
+      </body>
+    
+</html>
