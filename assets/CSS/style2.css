@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+body {
+  background: rgb(255,255,255);
+  background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(43,190,255,1) 50%, rgba(0,4,203,1) 100%); 
+}
+
+.nav-structure {
+  
+}
