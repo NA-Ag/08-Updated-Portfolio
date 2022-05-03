@@ -51,15 +51,53 @@
       </nav>
       
       <main>
-        <div class="b-example-divider"></div>
         <div class="container col-xxl-8 px-4 py-5 about-landing">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-              <img src="./assets/Images/software dev card large.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <!--Carousel here-->
+           
+            <div id="carouselProjects" class="carousel slide col-10 col-sm-8 col-lg-6" data-bs-ride="carousel">
+              
+              <div class="carousel-inner">
+                
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="./assets/Images/Old Projects/Horiseon-01.png" class="d-block mx-lg-auto img-fluid image-in-carousel" alt="Horiseon website image">
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="./assets/Images/Old Projects/portfolio-02.jpg" class="d-block mx-lg-auto img-fluid image-in-carousel" alt="Screenshot of the first version of my personal professional website">
+                </div>
+                
+                <div class="carousel-item">
+                  <img src="./assets/Images/Old Projects/password_generator-03.png" class="d-block mx-lg-auto img-fluid image-in-carousel" alt="Screenshot of a password generator working">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/Images/Old Projects/04-API-quiz.PNG" class="d-block mx-lg-auto img-fluid image-in-carousel" alt="Screenshot of javascript quiz working">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/Images/Old Projects/05-daily-task-calendar.PNG" class="d-block mx-lg-auto img-fluid image-in-carousel" alt="Screenshot of a daily planner working">
+                </div>            
+              
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+
+            
+            <!-- <div class="col-10 col-sm-8 col-lg-6">
+              <img src="./assets/Images/software dev card large.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div> -->
             <div class="col-lg-6">
               <h1 class="display-5 fw-bold lh-1 mb-3">About</h1>
-              <p class="lead">Welcome to my page! Here you'll find a gallery of my work, contact information and more about me. .</p>
+              <p class="lead">Welcome to my page! Here you'll find a gallery of my work, contact information and more about me. As for me, I'm an aspiring Fullstack developer from Mexico, while my formal education is in financial management i have a passion for programming and computers, here you'll see some of my recent work </p>
             </div>
           </div>
         </div>

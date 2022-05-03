@@ -2,9 +2,22 @@
 
 body {
   background: rgb(255,255,255);
-  background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(43,190,255,1) 50%, rgba(0,4,203,1) 100%); 
+  background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(255,185,43,1) 50%, rgba(203,0,0,1) 100%); 
 }
 
 .nav-structure {
-  
+  padding: 25px 30px 25px 25px;
 }
+
+
+.about-landing {
+
+}
+
+.image-in-carousel {
+  height: 16.7rem;
+}
+
+
+
+/* -webkit-text-stroke: 0.2px black; */
