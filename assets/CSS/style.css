@@ -105,3 +105,13 @@ body {
 
 
 /* End of contact section */
+
+/* Footer section styling starts here */
+footer {
+  background-color: var(--bg-color);
+  font-size: 30px;
+  padding: 1.25rem;
+  text-align: center;
+  margin: 6rem 0 0;
+}
+/* Footer section styling ends here */
